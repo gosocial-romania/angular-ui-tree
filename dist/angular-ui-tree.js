@@ -69,7 +69,7 @@
           $scope.$parentNodeScope = treeNodesCtrl.scope.$nodeScope;
 
           //modelValue for current node.
-          $scope.$modelValue = treeNodesCtrl.scope.$modelValue[$scope.$index];
+          $scope.$modelValue = treeNodesCtrl.scope.$modelValue && treeNodesCtrl.scope.$modelValue[$scope.$index];
           $scope.$parentNodesScope = treeNodesCtrl.scope;
 
           //Init sub nodes.
